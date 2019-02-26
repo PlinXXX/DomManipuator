@@ -60,7 +60,7 @@ let imagesArray = ["https://img.icons8.com/color/480/000000/html-5.png", "https:
 function populateImages() {
 	let imgs = document.getElementsByTagName("img");
 	for (let i = 0; i < imgs.length; i++) {
-		imgs[i].setAttribute("data-src", imagesArray[i]);
+		imgs[i].setAttribute("src", imagesArray[i]);
 		console.log(imgs[i]);
 	}
 
@@ -73,6 +73,7 @@ function populateImages() {
 // Je donne ci-dessous 2 coups de main sur cette modification : les plus à l'aise peuvent essayer de ne pas les lire.
 function deleteLastCards() {
 	let cards = document.getElementsByClassName("card mb-4 box-shadow");
+	console.log(cards);
 	console.log(cards.length);
 
 	for (let j = 0; j < 3; j++) {
